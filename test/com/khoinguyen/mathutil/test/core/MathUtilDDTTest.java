@@ -30,7 +30,7 @@ public class MathUtilDDTTest {
             {2, 2},
             {3, 6},
             {4, 24},
-            {6, 720},
+            {7, 720},
 //            {6, 720}
         };
     }
@@ -60,5 +60,24 @@ public class MathUtilDDTTest {
     
     /*
     Linux Tovalds: 
+    CI: Đảm bảo chất lượng code của 1 team, không riêng cá nhận nào
+    Vì code của dự án là do sự đóng góp của nhiều team memmber, 1 dự án có nhiều dev cùng code
+    Mỗi devv phải đảm bảo code của mình đều ngon  --> phải màu xanh --> code trên server phải xanh cho tất cả
+    CI là kĩ thuật gom code lên server phải đảm bảo xanh cho tất cả khi gom: Intergration 
+    Việc gom này diễn ra rất nhiều lần do code kéo dài thời gian và n người cùng làm cho nên việc kiểm tra màu xanh
+    cho tất cả phải làm liên tục --> tích hợp liên tục xuất hiện 
+    Tiến trình kiểm tra toàn dự án phải màu xanh khi dev nào đó chỉnh sửa code, mỗi lần ai sửa update code
+    trên server thì màu xanh cho tất cả, khi code trên server bị thay đổi 
+    
+    - Muốn làm CI cần:
+        + Source code của anh em 
+        + Server chứa code để gom code
+        + Unit test cho toàn dự án để cho xanh đỏ
+        + Kích hoạt quy trình chạy unit test khi có ai sửa code trên server
+        + Phải notify được xanh đỏ tới team member khi có vấn đề 
+        + Tự động việc làm ở trên không cần chạy bằng cơm --> ta cấu hình server và những thứ liên quan để
+        tạo quy trình xanh đỏ 1 cách tự động
+        --> Rẽ nhánh đi làm CI/CD: không cần code app, code cho quy trình xanh đỏ, deploy lên khai báo
+        hành động từ code --> chất lượng code app lên server 
     */
 }
