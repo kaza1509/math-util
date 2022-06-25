@@ -79,5 +79,28 @@ public class MathUtilDDTTest {
         tạo quy trình xanh đỏ 1 cách tự động
         --> Rẽ nhánh đi làm CI/CD: không cần code app, code cho quy trình xanh đỏ, deploy lên khai báo
         hành động từ code --> chất lượng code app lên server 
+    - CI Tool: là phần mềm lắng nghe server code xem có ai cập nhật code không nếu có sẽ kích hoạt bộ unit test
+    kiểm tra xanh đỏ 
+    XANH --> Không vấn đề
+    ĐỎ --> tự động gửi mail chửi dev vừa đưa code lên 
+    Lặp lại liên tục được gọi là continuous intergration
+    
+    Ngày xưa gihub làm server chứa code để cho tool khác lo: Jenkin, Circle CI
+    Ngày nay github tích hợp tool lắng nghe vào trong github gọi là github action
+    Tất cả CI Tool dưa trên nguyên tắc 
+        - Nó có 1 tập lệnh cấu hình sẵn, mình lựa chọn thao tác muốn dùng 
+        - Ví dụ yêu cầu github báo cho tool biết ai vừa sửa code
+        - Kích hoạt bộ lệnh gom code về server nào đó
+        - Gọi người kiến biên dịch code đã gom và chạy test và build file .jar .war
+        - Lệnh qua ui click option
+        - Gõ lệnh trong tập kịch bản có đuôi mở rộng là .YML .YAML
+    
+    * Chơi CI với github action phải tạ file yaml trên project để cứ ai sửa code thì file này đc chạy
+    - Vấn đề là java project có nhiều style bố trí code khác nhau (code giồng nhau thư mục bố trí code khác nhau)
+        + ANT
+        + MAVEN
+        + GRADLE
+    
+    - File YML cũng phải bố trí khác nhau nếu khác cấu trúc code 
     */
 }
