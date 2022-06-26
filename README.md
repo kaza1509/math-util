@@ -7,6 +7,6 @@
 * ...
 
 ## Screenshots
-![DDT & TDD With JUnit](https://github.com/kaza1509/math-util/blob/main/images/DDTWithJunit.png)
+![DDT & TDD With JUnit](https://github.com/kaza1509/math-util/blob/main/images/JUnit.png)
 
 #### © 2022 kaza1509
