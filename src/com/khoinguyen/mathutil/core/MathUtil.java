@@ -21,6 +21,22 @@ public class MathUtil {
     //20 giai thừa 18 con số 0, vừa kịp đủ cho kiểu long. 21 giai thừa tràn kiểu long
     //tính giai thừa từ 0 - 20
     
+//    public static long getFactorial(int n) {
+//        if(n < 0 || n > 20) 
+//            throw new IllegalArgumentException("Invalid argurment n must be between 0..20");
+//        
+//        if(n == 0 || n == 1)
+//            return 1;
+//        
+//        long product = 1;
+//        for (int i = 1; i <= n; i++)
+//            product *= i;
+//        return product;
+//    }
+    
+    //Học về đệ quy 30s
+    //Hiện tượng gọi lại chính mình với 1 quy mô khác, giống nhau và lồng trong nhau 
+    //nhỏ hơn và đếm điểm dừng
     public static long getFactorial(int n) {
         if(n < 0 || n > 20) 
             throw new IllegalArgumentException("Invalid argurment n must be between 0..20");
@@ -28,9 +44,6 @@ public class MathUtil {
         if(n == 0 || n == 1)
             return 1;
         
-        long product = 1;
-        for (int i = 1; i <= n; i++)
-            product *= i;
-        return product;
+        return n * getFactorial(n - 1);
     }
 }
