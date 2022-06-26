@@ -6,6 +6,9 @@
 * Unit Testing source code with JUnit Framework 
 * Github action to demonstrate the Continuous Intergration (CI) technique
 * Regession Test
+* DDT : Data driven Testing là tách riêng bộ data test với với code 
+* TDD : Test Driven Development là trong quá trình viết code luôn luôn song hành với unit test 
+* CI: Continuous Intergration: test tự động khi đẩy code lên, liên tục test khi có sự thay đổi về source code
 * ...
 
 ## Screenshots
